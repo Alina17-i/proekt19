@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Header</title>
+  </head>
+  <body>
+    <header id="header" class="header">
+      <div class="header__top">
+        <div class="header__wrap">
+          <button class="header__burger" id="burgerMenu">
+            <div class="header__burger-line"></div>
+            <div class="header__burger-line"></div>
+            <div class="header__burger-line"></div>
+          </button>
+          <div class="header__logo-mobile"><img class="header__logo-image" src="img/logo-mobile.svg" alt="Macaron Shop"/></div>
+          <div class="header__nav">
+            <ul class="header__nav-list">
+              <li class="header__nav-item"><a class="header__nav-link" href="#contekt">Гарантия свежести</a></li>
+              <li class="header__nav-item"><a class="header__nav-link" href="#contekt">Доставка и оплата</a></li>
+              <li class="header__nav-item"><a class="header__nav-link" href="#contekt">Оптовые поставки</a></li>
+              <li class="header__nav-item"><a class="header__nav-link" href="#contekt">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="header__location"><span class="header__city">Санкт-Петербург</span>
+            <ul class="header__city-list">
+              <li class="header__city-item"><a href="#">Москва</a></li>
+              <li class="header__city-item"><a href="#">Екатеринбург</a></li>
+              <li class="header__city-item"><a href="#">Челябинск</a></li>
+              <li class="header__city-item"><a href="#">Уфа</a></li>
+            </ul>
+          </div>
+          <div class="header__contacts"><a class="header__phone" href="tel:+78123098288">8 812 309-82-88</a><a class="header__cart" href="#">
+              <div class="header__cart-counter">4</div>В корзине (4 товара)</a></div>
+          <div class="header__socials">
+            <a class="header__social-icon header__social-icon--tg" href="@unreciprocatedlove69"><img src="img/tg.svg" alt="tg"/></a>
+            <a class="header__social-icon header__social-icon--vk" href="https://vk.com/alino4kalove888"><img src="img/vk.svg" alt="vk"/></a>
+            <a class="header__social-icon header__social-icon--ok" href="#"><img src="img/ok.svg" alt="ok"/></a>
+          
+          </div>
+        </div>
+      </div>
+      <div class="header__main">
+        <div class="header__main-container">
+          <div class="header__menu header__menu--left"><a class="header__menu-item" href="#stock">
+               СЛАДКИЕ ДНИ <span class="header__percent">%</span></a>
+            <div class="header__menu-item header__menu-item--dropdown"><span class="header__select">ПОДАРОЧНЫЕ НАБОРЫ</span>
+              <ul class="header__submenu">
+                <li class="header__submenu-item"><a href="#">Пирожные макарон</a></li>
+                <li class="header__submenu-item"><a href="#">Эклеры</a></li>
+                <li class="header__submenu-item"><a href="#">Вафельные трубочки</a></li>
+                <li class="header__submenu-item"><a href="#">Профили</a></li>
+              </ul>
+            </div><a class="header__menu-item" href="#nab">СОБРАТЬ НАБОР</a>
+          </div>
+          <div class="header__logo"><img class="header__logo-image" src="img/logo-desctop.png" alt="Macaron Shop"/></div>
+          <div class="header__menu header__menu--right"><a class="header__menu-item" href="#card">СОЗДАТЬ ДИЗАЙН</a>
+            <div class="header__menu-item header__menu-item--dropdown"><span class="header__select">КОМПАНИЯМ</span>
+              <ul class="header__submenu">
+                <li class="header__submenu-item"><a href="#">Пирожные макарон</a></li>
+                <li class="header__submenu-item"><a href="#">Эклеры</a></li>
+                <li class="header__submenu-item"><a href="#">Вафельные трубочки</a></li>
+                <li class="header__submenu-item"><a href="#">Профили</a></li>
+              </ul>
+            </div>
+            <div class="header__menu-item header__menu-item--dropdown"><span class="header__select">ВЕСЬ КАТАЛОГ</span>
+              <ul class="header__submenu">
+                <li class="header__submenu-item"><a href="#">Пирожные макарон</a></li>
+                <li class="header__submenu-item"><a href="#">Эклеры</a></li>
+                <li class="header__submenu-item"><a href="#">Вафельные трубочки</a></li>
+                <li class="header__submenu-item"><a href="#">Профили</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu menu--mobile" id="navMenu">
+        <button class="menu__close"></button>
+        <div class="menu__container">
+          <div class="menu__location js-submenu"><span class="menu__select">Санкт-Петербург</span>
+            <ul class="menu__submenu menu__city-list">
+              <li class="menu__submenu-item menu__city-item"><a href="#">Москва</a></li>
+              <li class="menu__submenu-item menu__city-item"><a href="#">Екатеринбург</a></li>
+              <li class="menu__submenu-item menu__city-item"><a href="#">Челябинск</a></li>
+              <li class="menu__submenu-item menu__city-item"><a href="#">Уфа</a></li>
+            </ul>
+          </div>
+          <ul class="menu__list">
+            <li class="menu__item"><a class="menu__link" href="#stock">СЛАДКИЕ ДНИ<span class="menu__discount"></span></a></li>
+            <li class="menu__item menu__item--dropdown js-submenu"><span class="menu__select">ПОДАРОЧНЫЕ НАБОРЫ</span>
+              <ul class="menu__submenu">
+                <li class="menu__submenu-item"><a href="#contekt">Гарантия свежести</a></li>
+                <li class="menu__submenu-item"><a href="#contekt">Доставка и оплата</a></li>
+                <li class="menu__submenu-item"><a href="#contekt">Оптовые поставки</a></li>
+                <li class="menu__submenu-item"><a href="#contekt">Контакты</a></li>
+              </ul>
+            </li>
+            <li class="menu__item"><a class="menu__link" href="#nab">СОБРАТЬ НАБОР</a></li>
+            <li class="menu__item"><a class="menu__link" href="#card">СОЗДАТЬ ДИЗАЙН</a></li>
+            <li class="menu__item menu__item--dropdown js-submenu"><span class="menu__select">КОМПАНИЯМ</span>
+              <ul class="menu__submenu">
+                <li class="menu__submenu-item"><a href="#">Гарантия свежести</a></li>
+                <li class="menu__submenu-item"><a href="#">Доставка и оплата</a></li>
+                <li class="menu__submenu-item"><a href="#">Оптовые поставки</a></li>
+                <li class="menu__submenu-item"><a href="#">Контакты</a></li>
+              </ul>
+            </li>
+            <li class="menu__item menu__item--dropdown js-submenu"><span class="menu__select">ВЕСЬ КАТАЛОГ</span>
+              <ul class="menu__submenu">
+                <li class="menu__submenu-item"><a href="#">Гарантия свежести</a></li>
+                <li class="menu__submenu-item"><a href="#">Доставка и оплата</a></li>
+                <li class="menu__submenu-item"><a href="#">Оптовые поставки</a></li>
+                <li class="menu__submenu-item"><a href="#">Контакты</a></li>
+              </ul>
+            </li>
+          </ul><a class="menu__phone" href="tel:88123098288">8 812 309-82-88</a>
+          <div class="menu__socials">
+            <a class="menu__social" href="@unreciprocatedlove69"><img src="img/tg.svg" alt="tg"/></a>
+            <a class="menu__social" href="https://vk.com/alino4kalove888"><img src="img/vk.svg" alt="vk"/></a>
+            <a class="menu__social" href="#"><img src="img/ok.svg" alt="ok"/></a></div>
+        </div>
+      </div>
+    </header>
+    <script src="assets/js/app.js"> </script>
+
+    <main class="main">
+      <!--все норм-->
+      <section class="banner">
+        <div class="container-1 as">
+          <div class="banner_row">
+            <div class="banner__col">
+              <img class="hg" src="img/Group345.png" alt="345">
+              <img class="y" src="img/Groupy.png" alt="y">
+            </div>
+          </div>
+          <div class="banner__col banner__content ">
+            <div class="banner__brand ">
+              Macaronshop
+            </div>
+            
+            <div class="banner__since ">
+              <div class="lin"></div>
+              <div class="lan">since 2013</div>
+              <div class="lin"></div>
+            </div>
+            <h1 class="banner__title">
+              Настоящая любовь
+            </h1>
+            <p class="banner__snippet">
+              Пирожные макарон и&nbsp;другие десерты из&nbsp;натуральных ингредиентов, приготовленные с&nbsp;любовью
+            </p>
+          </div>
+        </div>
+</section>
+
+<!--все норм-->
+<section id="card" class="card">
+<div class="container2">
+  <div class="car-items">
+    <!--1 карточка-->
+    <div class="car-item1">
+       <img class="o125" src="img/Group125.png" alt="125">
+       <div class="pimg">
+       <h3>Готовые наборы</h3> <img src="img/Vector(12).png" alt="12">
+      </div>
+      <p class="p">
+        Готовые наборы со&nbsp;скидкой.</p>
+        <p class="p">
+          Вы&nbsp;можете подобрать набор на&nbsp;подходящий случай.
+      </p>
+    </div>
+     
+    <!--2 карточка-->
+    <div class="car-item2">
+      <img class="o125" src="img/Group122.png" alt="122">
+      <div class="pimg">
+      <h3>Собрать свой набор</h3> <img src="img/Vector(12).png" alt="12">
+     </div>
+     <p class="p">
+      Выбрать количество макарун, и&nbsp;выбрать вкусы
+      </p>
+    </div>
+
+    <!--3 карточка-->
+    <div class="car-item3">
+      <img class="o125" src="img/Group124.png" alt="125">
+      <div class="pimg">
+      <h3>Набор с&nbsp;индивидуальной печатью</h3> <img src="img/Vector(12).png" alt="12">
+     </div>
+     <p class="p">
+      Собрать набор макарон с&nbsp;уникальным дизайном.
+      </p>
+    </div>
+    
+    <!--4 карточка-->
+    <div class="car-item4">
+      <img class="o125" src="img/Group123.png" alt="125">
+      <div class="pimg">
+      <h3>Свадебные предложения</h3> <img src="img/Vector(12).png" alt="12">
+     </div>
+     <p class="p">
+      Нежные пирожные макаронс с&nbsp;разными вкусами для
+      </p>
+      <p class="p">
+        украшения вашего свадебного торжества
+      </p>
+    </div>
+    <!--5 карточка-->
+    <div class="car-item5">
+      <img class="o125" src="img/Group131.png" alt="131">
+      <div class="pimg">
+      <h3>Корпоративные подарки</h3> <img src="img/Vector(12).png" alt="12">
+     </div>
+     <p class="p">
+      От&nbsp;85&nbsp;руб за&nbsp;шт. С&nbsp;уникальным дизайном.
+      </p>
+      <p class="p">
+        Приятный комплимент для коллег и&nbsp;партнеров
+      </p>
+    </div>
+    <!--6 карточка-->
+    <div class="car-item6">
+      <img class="o125" src="img/Group130.png" alt="130">
+      <div class="pimg">
+      <h3>Оптовые поставки</h3> <img src="img/Vector(12).png" alt="12">
+     </div>
+     <p class="p">
+      Предложение для кофеен, кафе, отелей и&nbsp;т.д.
+      </p>
+      <p class="p">
+        Посмотрите условия сотрудничества и&nbsp;отзывы.
+      </p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="stock" class="stock">
+  <div class="container3">
+<h2 class="p2">Акции</h2>
+<div class="sto">
+  <div class="ft reimg">
+    <div class="gh">
+      <img src="img/Frame385(1).svg" alt="385">
+    </div>
+   <img src="img/Rectangle172.png" alt="172">
+   <div class="color">
+  <p>
+    По&nbsp;СПб в&nbsp;районе КАД&nbsp;&mdash; от&nbsp;
+  </p>
+  <p>
+    3000₽
+  </p>
+  <p>
+    По&nbsp;МСК&nbsp;&mdash; от&nbsp;5000₽
+  </p>
+   </div>
+  </div>
+
+   <div class="ft reimg">
+    <div class="gh">
+      <img src="img/Frame385.svg" alt="386">
+    </div>
+    <img src="img/Rectangle173.png" alt="173">
+    <div class="color1">
+      <p>
+        Шоколадное пирожное
+      </p>
+      <p>
+        картошка на&nbsp;основе
+      </p>
+      <p>
+        бисквита!
+      </p>
+    </div>
+  </div>
+
+  <div class="ft reimg">
+    <div class="gh">
+      <img src="img/Frame385.svg" alt="387">
+    </div>
+    <img src="img/Rectangle174.png" alt="174">
+    <div class="color1">
+      <p >
+        Аппетитные конфеты
+      </p>
+      <p>
+        на&nbsp;основе миндального
+      </p>
+      <p>
+        печенья и&nbsp;крема
+      </p>
+    </div>
+  </div>
+
+  <div class="ft1 reimg">
+    <div class="gh">
+      <img src="img/Frame386.svg" alt="387">
+    </div>
+    <img src="img/Rectangle175.png" alt="175">
+    <div class="color1">
+    <p>
+      Карамель на&nbsp;палочке
+    </p>
+    <p>
+      из&nbsp;натуральных
+    </p>
+    <p>
+      ингредиентов
+    </p>
+    </div>
+  </div>
+  <img class="cub" src="img/Group129.png" alt="129">
+</div>
+  </div>
+<h2 class="p22">Акции</h2>
+<div class="sto2">
+  <img src="img/Groupx.png" alt="x">
+  <div class="xy">
+    <p class="q">Новинка</p>
+    <h3 class="c4">Наборы на&nbsp;40&nbsp;шт <br> от&nbsp;3600&nbsp;₽</h3>
+  </div>
+  <img class="cub1" src="img/Group129.png" alt="129">
+</div>
+</section>
+
+<section class="day">
+<div class="conteiner4">
+  <h2 class="p3">Ближайшие праздники</h2>
+  <div class="cake">
+    <img src="img/Group345.svg" alt="345">
+  </div>
+  <div class="text">
+    <p>Скоро <br> День рождения <br> близкого человека </p>
+
+    <p>1&nbsp;января <br> Новый Год <br> 2021</p>
+     
+    <p>14&nbsp;февраля <br> День Святого <br> Валентина</p>
+
+    <p>23&nbsp;февраля <br> День Защитника <br> Отечества</p>
+
+    <p>8&nbsp;марта <br> Международный <br> Женский День</p>
+
+    <p>9&nbsp;марта <br> День Сурка</p>
+  </div>
+</div>
+
+<div class="conteiner44">
+  <h2 class="p33">Ближайшие праздники</h2>
+  <div class="cakee">
+    <img src="img/Group34.svg" alt="34">
+  </div>
+  <div class="textt">
+    <p>Скоро <br> День рождения <br> близкого человека </p>
+    <p>1&nbsp;января <br> Новый Год <br> 2021</p>
+    <p>14&nbsp;февраля <br> День Святого <br> Валентина</p>
+  </div>
+</div>
+</section>
+
+<!--все норм-->
+<section id="nab">
+  <h2 class="p4">Популярные наборы</h2>
+  <div class="conteiner5">
+    <div class="set">
+      <!--1 набор-->
+      <div class="sets">
+      <img  class="reimg" src="img/Rectangle172.svg" alt="172svg">
+      <div class="yu">
+      <h4 class="tith4">Сердце</h4>
+      <div class="tex">
+        24&nbsp;штуки в&nbsp;коробке в&nbsp;виде сердца. <br> Ассорти из&nbsp;6&nbsp;вкусов
+      </div>
+    </div>
+      <div class="sets_footer">
+        <div class="price">
+          <p>2800 руб</p>
+        </div>
+        <div class="add">
+          <img src="img/bag.svg" alt="bag">
+          <P>В&nbsp;корзину</P>
+        </div>
+      </div>
+    </div>
+<!--2 набор-->
+<div class="sets">
+  <img  class="reimg" src="img/Rectangle174.svg" alt="174svg">
+  <div class="yu">
+  <h4 class="tith4">Красота спасёт мир</h4>
+  <div class="tex">
+    Набор 16&nbsp;шт. Вкусы: клубника&nbsp;&mdash; базилик, кокос, <br> голубой сыр, пармезан
+  </div>
+</div>
+  <div class="sets_footer">
+    <div class="price">
+      <p>750 руб</p>
+    </div>
+    <div class="add">
+      <img src="img/bag.svg" alt="">
+      <P>В&nbsp;корзину</P>
+    </div>
+  </div>
+</div>
+
+<!--3 набор-->
+<div class="sets">
+  <img  class="reimg" src="img/Rectangle176.svg" alt="176svg">
+  <div class="yu">
+  <h4 class="tith4">Круглый набор</h4>
+  <div class="tex">
+    40&nbsp;макаронс в&nbsp;круглой коробке с&nbsp;персональной <br> надписью
+  </div>
+</div>
+  <div class="sets_footer">
+    <div class="price">
+      <p>3900 руб</p>
+    </div>
+    <div class="add">
+      <img src="img/bag.svg" alt="">
+      <P>В&nbsp;корзину</P>
+    </div>
+  </div>
+</div>
+
+<!--4 набор-->
+<div class="sets">
+  <img  class="reimg" src="img/Rectangle282.svg" alt="282svg">
+  <div class="yu">
+  <h4 class="tith4">Набор на&nbsp;9</h4>
+  <div class="tex">
+    Набор из&nbsp;9&nbsp;штук в&nbsp;квадратной коробке. Вкусы: <br> шоколад, фисташка, вишня
+  </div>
+</div>
+  <div class="sets_footer">
+    <div class="price">
+      <p>950 руб</p>
+    </div>
+    <div class="add">
+      <img src="img/bag.svg" alt="">
+      <P>В&nbsp;корзину</P>
+      </div>
+    </div>
+  </div>
+
+<!--5 набор-->
+<div class="sets">
+  <img  class="reimg" src="img/Rectangle283.svg" alt="283svg">
+  <div class="yu">
+  <h4 class="tith4">Набор на&nbsp;16</h4>
+  <div class="tex">
+    Набор 16&nbsp;шт. Вкусы: соленая карамель, голубой <br> сыр, пармезан, шоколад
+  </div>
+</div>
+  <div class="sets_footer">
+    <div class="price">
+      <p>1500 руб</p>
+    </div>
+    <div class="add">
+      <img src="img/bag.svg" alt="">
+      <P>В&nbsp;корзину</P>
+    </div>
+  </div>
+</div>
+
+<!--6 набор-->
+<div class="sets">
+  <img  class="reimg" src="img/Rectangle284.svg" alt="284svg">
+  <div class="yu">
+  <h4 class="tith4">Сердце</h4>
+  <div class="tex">
+    24&nbsp;штуки в&nbsp;коробке в&nbsp;виде сердца. <br> Ассорти из&nbsp;6&nbsp;вкусов
+  </div>
+</div>
+  <div class="sets_footer">
+    <div class="price">
+      <p>2500 руб</p>
+    </div>
+    <div class="add">
+      <img src="img/bag.svg" alt="">
+      <P>В&nbsp;корзину</P>
+    </div>
+  </div>
+</div>
+
+  </div>
+  <div class="but">
+  <button class="btn">Все праздничные наборы</button>
+</div>
+</div>
+
+
+<h2 class="p44">Популярные наборы</h2>
+  <div class="conteiner55">
+    <div class="sett">
+      <!--1 набор-->
+      <div class="setss">
+      <img  class="reimg" src="img/Rectangle172.svg" alt="172svg">
+      <div class="yyu">
+      <h4 class="tith44">Сердце</h4>
+      <div class="texx">
+        24&nbsp;штуки в&nbsp;коробке в&nbsp;виде сердца. <br> Ассорти из&nbsp;6&nbsp;вкусов
+      </div>
+    </div>
+      <div class="sets_footer">
+        <div class="pricee">
+          <p>2800 руб</p>
+        </div>
+        <div class="addd">
+          <img src="img/bag.svg" alt="bag">
+        </div>
+      </div>
+    </div>
+<!--2 набор-->
+<div class="setss r">
+  <img  class="reimg" src="img/Rectangle176.svg" alt="176svg">
+  <div class="yyu f">
+  <h4 class="tith44">Круглый набор</h4>
+  <div class="texx">
+    40&nbsp;макаронс в&nbsp;круглой коробке с&nbsp;персональной
+  </div>
+</div>
+  <div class="sets_footer e4">
+    <div class="pricee">
+      <p>2800 руб</p>
+    </div>
+    <div class="addd">
+      <img src="img/bag.svg" alt="bag">
+    </div>
+  </div>
+</div>
+<!--3 набор-->
+<div class="setss r r4">
+  <img  class="reimg" src="img/Rectangle318.svg" alt="318svg">
+  <div class="yyu f">
+  <h4 class="tith44">Набор на&nbsp;9</h4>
+  <div class="texx">
+    Набор из&nbsp;9&nbsp;штук в&nbsp;квадратной коробке. Вкусы: шоколад, фисташка, вишня
+  </div>
+</div>
+  <div class="sets_footer e4">
+    <div class="pricee">
+      <p>950 руб</p>
+    </div>
+    <div class="addd">
+      <img src="img/bag.svg" alt="bag">
+    </div>
+  </div>
+</div>
+<!--4 набор-->
+<div class="setss r r4">
+  <img  class="reimg" src="img/Rectangle319.svg" alt="319svg">
+  <div class="yyu f">
+  <h4 class="tith44">Набор на&nbsp;16</h4>
+  <div class="texx">
+    Набор 16&nbsp;шт. Вкусы: соленая карамель, голубой сыр, пармезан, шоколад
+  </div>
+</div>
+  <div class="sets_footer e4">
+    <div class="pricee">
+      <p>1500 руб</p>
+    </div>
+    <div class="addd">
+      <img src="img/bag.svg" alt="bag">
+    </div>
+  </div>
+</div>
+<!--5 набор-->
+<div class="setss r r5">
+  <img  class="reimg" src="img/Rectangle172.svg" alt="172svg">
+  <div class="yyu f">
+  <h4 class="tith44">Сердце</h4>
+  <div class="texx">
+    24&nbsp;штуки в&nbsp;коробке в&nbsp;виде сердца. Ассорти из&nbsp;6&nbsp;вкусов
+  </div>
+</div>
+  <div class="sets_footer e4">
+    <div class="pricee">
+      <p>2800 руб</p>
+    </div>
+    <div class="addd">
+      <img src="img/bag.svg" alt="bag">
+    </div>
+  </div>
+</div>
+<!--6 набор-->
+<div class="setss r r5">
+  <img  class="reimg" src="img/Rectangle176.svg" alt="176svg">
+  <div class="yyu f">
+  <h4 class="tith44">Круглый набор</h4>
+  <div class="texx">
+    40&nbsp;макаронс в&nbsp;круглой коробке с&nbsp;персональной
+  </div>
+</div>
+  <div class="sets_footer e4">
+    <div class="pricee">
+      <p>2800 руб</p>
+    </div>
+    <div class="addd">
+      <img src="img/bag.svg" alt="bag">
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+  <div class="but">
+  <button class="btnn">Все праздничные наборы</button>
+</div>
+</section>
+
+<!--все норм-->
+<section class="df s">
+  <h2 class="p5">Новости</h2>
+  <div class="conteiner6">
+    <div class="ty">
+      <!--1 новость-->
+      <div class="rt reimg">
+      <img src="img/Rectangle282(1).svg" alt="2821svg">
+      <div class="yuu">
+        <p class="bat">25.02.2023</p>
+      <h4 class="tith4">Скоро главный праздник весны!</h4>
+      <div class="tex">
+        Девушки любят, когда вкусно, красиво и&nbsp; <br>натурально. Смотрите больше наборов с&nbsp; <br>десертами ручной работы
+      </div>
+    </div>
+    </div>
+<!--2 новость-->
+<div class="rt reimg">
+  <img src="img/Rectangle3.svg" alt="3svg">
+  <div class="yuu">
+    <p class="bat">17.02.2023</p>
+  <h4 class="tith4">Конкурс на&nbsp;23&nbsp;февраля!</h4>
+  <div class="tex">
+    День Защитника Отечества уже совсем скоро! <br> Порадуйте своего сладкоежку с&nbsp;помощью <br>аппетитных наборов от&nbsp;МакаронШоп
+  </div>
+</div>
+  </div>
+  <!--3 новость-->
+<div class="rt reimg">
+  <img src="img/Rectangle4.svg" alt="4svg">
+  <div class="yuu">
+    <p class="bat">11.02.2023</p>
+  <h4 class="tith4">Экспресс-конкурс ко&nbsp;дню <br> Святого Валентина</h4>
+  <div class="tex">
+    Подарок уже через 2&nbsp;дняДень всех влюблённых <br> не&nbsp;за&nbsp;горами. Расскажи о&nbsp;своих чувствах с&nbsp; <br>помощью сладкой валентинки от&nbsp;МакаронШоп
+  </div>
+</div>
+</div>
+<img class="cube" src="img/Group129.png" alt="129">
+</div>
+<div class="but">
+  <button class="btn2">Все новости</button>
+</div>
+  </div>
+
+  <h2 class="p55">Новости</h2>
+  <div class="conteiner66">
+    <div class="tyyy">
+      <!--1 новость-->
+      <div class="rttt reimg">
+      <img src="img/Rectangle22.svg" alt="22svg">
+      <div class="yuu">
+        <p class="batmo">25.02.2023</p>
+      <h4 class="tith44">Скоро главный праздник весны!</h4>
+      <div class="texx">
+        Девушки любят, когда <br> вкусно, красиво и&nbsp; <br> натурально. Смотрите <br> больше наборов с&nbsp; <br>десертами ручной <br> работы
+      </div>
+    </div>
+    </div>
+<!--2 новость-->
+<div class="rttt reimg">
+  <img src="img/Rectangle23.svg" alt="23svg">
+  <div class="yuu">
+    <p class="batmo">17.02.2023</p>
+  <h4 class="tith44">Конкурс на&nbsp;23&nbsp;февраля!</h4>
+  <div class="texx">
+    День Защитника <br> Отечества уже совсем <br> скоро! Порадуйте своего сладкоежку с&nbsp;помощью <br>аппетитных наборов от&nbsp;МакаронШоп
+  </div>
+</div>
+  </div>
+</div>
+<img class="cubee" src="img/Group129.png" alt="129">
+<div class="but">
+  <button class="btn22">Все новости</button>
+</div>
+  </div>
+</section>
+
+<!--все норм-->
+<section>
+  <h2 class="p5">Мы&nbsp;обо всём позаботились</h2>
+  <h2 class="p66">Мы&nbsp;обо всём позаботились</h2>
+  <div class="conteiner7">
+    <div class="ty">
+      <!--1-->
+      <div class="rtt">
+      <img class="reimg" src="img/Rectangle214.svg" alt="214svg">
+      <div class="yuuu">
+      <h4 class="tith4">Лучшие ингрединты</h4>
+      <div class="tex">
+        Что-то про суперкачество, лучших поваров, свежесть и&nbsp;т.д.
+      </div>
+    </div>
+    </div>
+<!--2-->
+<div class="rtt">
+  <img class="reimg" src="img/Rectangle215.svg" alt="215svg">
+  <div class="yuuu">
+  <h4 class="tith4">Упаковка</h4>
+  <div class="tex">
+    Что-то про суперкоробочки и&nbsp;бантики и&nbsp;бла бла бла
+  </div>
+</div>
+</div>
+  <!--3-->
+<div class="rtt">
+  <img class="reimg" src="img/Rectangle216.svg" alt="216svg">
+  <div class="yuuu">
+  <h4 class="tith4">Получение в&nbsp;день заказа</h4>
+  <div class="tex">
+    В&nbsp;день заказа доставка курьером или самовывоз
+  </div>
+</div>
+</div>
+ <!--4-->
+<div class="rtt">
+  <img class="reimg" src="img/Rectangle217.svg" alt="217svg">
+  <div class="yuuu">
+  <h4 class="tith4">Анонимная доставка</h4>
+  <div class="tex">
+    Можем преподнести Ваш заказ как анонимный подарок
+  </div>
+</div>
+</div>
+
+</div>
+  </div>
+
+  <div class="conteiner77">
+    <div class="ty h">
+      <!--1-->
+      <div class="rrtt">
+      <img class="reimg " src="img/Rectangle90.svg" alt="90svg">
+      <div class="yuuuu">
+      <h4 class="tith44">Лучшие ингрединты</h4>
+      <div class="texx">
+        Что-то про суперкачество,<br> лучших поваров, свежесть и&nbsp; <br>т.д.
+      </div>
+    </div>
+    </div>
+<!--2-->
+<div class="rrtt">
+  <img class="reimg" src="img/Rectangle5.svg" alt="5svg">
+  <div class="yuuuu">
+  <h4 class="tith44">Упаковка</h4>
+  <div class="texx">
+    Что-то про суперкоробочки и&nbsp; <br>бантики и&nbsp;бла бла бла
+  </div>
+</div>
+</div>
+  <!--3-->
+<div class="rrtt n">
+  <img class="reimg" src="img/Rectangle26.svg" alt="26svg">
+  <div class="yuuuu">
+  <h4 class="tith44">Получение в&nbsp;день <br> заказа</h4>
+  <div class="texx">
+    В&nbsp;день заказа доставка курьером или самовывоз
+  </div>
+</div>
+</div>
+ <!--4-->
+<div class="rrtt n">
+  <img class="reimg" src="img/Rectangle27.svg" alt="27svg">
+  <div class="yuuuu">
+  <h4 class="tith44">Анонимная доставка</h4>
+  <div class="texx">
+    Можем преподнести Ваш заказ как анонимный подарок
+  </div>
+</div>
+</div>
+
+</div>
+  </div>
+</section>
+
+    </main>
+    <footer id="contekt" class="footer">
+      <div class="cont">
+        <div class="icon">
+<div class="ico">
+  <img src="img/Frame.svg" alt="Frame">
+  <p>Готовим вручную <br> и&nbsp;с&nbsp;любовью</p>
+</div>
+
+<div class="ico">
+  <img src="img/Group18.svg" alt="18">
+  <p>Доставим <br> в&nbsp;день заказа</p>
+</div>
+
+<div class="ico">
+  <img src="img/Vector.svg" alt="Vector.svg">
+  <p>Доставим <br> в&nbsp;день заказа</p>
+</div>
+        </div>
+        
+<div class="info">
+  <div class="in1">
+  <h3 class="p7">Информация</h3>
+  <a href="#"><p>О&nbsp;компании </p></a>
+    <a href="#"><p>Гарантии вкуса и&nbsp;свежести</p> </a>
+    <a href="#"><p>Доставка и&nbsp;оплата</p> </a>
+    <a href="#"><p>Контакты</p></a>
+</div>
+
+  <div class="in1">
+<h3 class="p7">Каталог</h3>
+ <a href="#header"><p>Каталог десертов </p></a>
+  <a href="#nab"><p>Готовые наборы </p></a>
+  <a href="#card"><p>Собрать свой набор</p></a>
+    <a href="#stock"><p>Акции</p></a>
+</div>
+
+<div class="in1">
+<h3 class="p7">Для бизнеса</h3>
+ <a href="#card"> <p>Корпоративные подарки </p></a>
+ <a href="#card"><p>Для юридических лиц</p></a>
+<a href="#card"><p>Оповикам</p></a>
+</div>
+
+<div class="in2">
+<h3 class="p8">+7 (812) 309 82&nbsp;88</h3>
+  <p>
+    с&nbsp;9:00 до&nbsp;21:00
+</p>
+</div>
+
+      </div>
+
+      <div class="pict">
+        <div class="wor">
+          <p> &copy; 2021 Макароншоп <br> ООО &laquo;Квантум&raquo;, Санкт-Петербург, улица Маршала Тухачевского, <br> дом&nbsp;22</p>
+        </div>
+
+        <div class="net">
+          <a href="https://vk.com/alino4kalove888"><img src="img/Group29.svg" alt="29"></a>
+        </div>
+      </div>
+      </div>
+
+      <div class="cont2">
+        <div class="icon2">
+<div class="ico2">
+  <img src="img/Frame.svg" alt="Frame">
+  <p>Готовим вручную и&nbsp;с&nbsp;любовью</p>
+</div>
+
+<div class="ico2">
+  <img src="img/Group18.svg" alt="18">
+  <p>Доставим в&nbsp;день заказа</p>
+</div>
+
+<div class="ico2">
+  <img src="img/Vector.svg" alt="Vector.svg">
+  <p>Доставим в&nbsp;день заказа</p>
+</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
